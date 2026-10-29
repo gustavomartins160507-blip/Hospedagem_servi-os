@@ -14,7 +14,7 @@ const ForgotPassword = () => {
 
         try {
             const resposta = await fetch(
-                
+
                 "http://localhost:3000/esqueci-senha",
                 {
                     method: "POST",
