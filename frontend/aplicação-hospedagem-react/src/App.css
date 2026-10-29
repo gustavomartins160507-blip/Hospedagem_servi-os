@@ -304,7 +304,105 @@ button:focus-visible {
 
 }
 
+#mensagem_token {
 
+    color: #166534;
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.resetar-senha {
+  width: min(100% - 32px, 460px);
+  margin: auto;
+  padding: clamp(24px, 5vw, 40px);
+  border: 1px solid #dce4dd;
+  border-radius: 20px;
+  background: #fffefa;
+  box-shadow: 0 24px 70px rgba(35, 51, 47, 0.12);
+  color: #23332f;
+}
+
+.resetar-senha h1 {
+  margin: 0 0 10px;
+  color: #23332f;
+  font-size: clamp(1.7rem, 5vw, 2.2rem);
+  text-align: center;
+}
+
+.resetar-senha p {
+  margin: 0 0 24px;
+  color: #74817b;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.resetar-senha label {
+  display: block;
+  margin: 0 0 7px;
+  color: #354840;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.resetar-senha input[type="password"] {
+  width: 100%;
+  min-height: 48px;
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px solid #dce4dd;
+  border-radius: 12px;
+  background: #fff;
+  color: #23332f;
+  font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.resetar-senha input[type="password"]:focus {
+  outline: none;
+  border-color: #176b5b;
+  box-shadow: 0 0 0 4px rgba(23, 107, 91, 0.12);
+}
+
+.resetar-senha button {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 4px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #176b5b;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.resetar-senha button:hover {
+  background: #105447;
+  transform: translateY(-1px);
+}
+
+.resetar-senha button:focus-visible {
+  outline: 3px solid rgba(23, 107, 91, 0.35);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .resetar-senha {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+}
 @media (max-width: 560px) {
   #root {
     padding: 18px 12px;

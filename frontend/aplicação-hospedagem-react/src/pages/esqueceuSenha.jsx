@@ -31,8 +31,9 @@ const ForgotPassword = () => {
 
             if (!resposta.ok) {
                 setMensagem(dados.message);
+                setCorMensagem("red");
                 return;
-            }
+        }
 
             setMensagem(dados.message);
 
@@ -66,7 +67,7 @@ const ForgotPassword = () => {
                 Enviar instruções
             </button>
 
-            <p>{mensagem}</p>
+            <p id="mensagem_token">{mensagem}</p>
 
         </form>
     );

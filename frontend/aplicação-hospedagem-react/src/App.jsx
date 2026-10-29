@@ -4,6 +4,7 @@ import LoadApi from './pages/Carregarapi'
 import Cadastro from './pages/cadastro'
 import Login from './pages/login'
 import ForgotPassword from './pages/esqueceuSenha'
+import ResetPassword from './pages/resetarSenha'
 function App() {
     return (
 
@@ -13,6 +14,7 @@ function App() {
             <Route path='/login' element={<Login />}/>
             <Route path='/esqueceu-senha' element={<ForgotPassword />}/>
             <Route path='/cadastro' element={<Cadastro />}/>
+            <Route path='/resetar-senha' element={<ResetPassword />}/>
         </Routes>
         
     )

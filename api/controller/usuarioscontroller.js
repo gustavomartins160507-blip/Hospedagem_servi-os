@@ -376,7 +376,7 @@ async novousuario(request, response) {
 
             await usuario.save()
 
-            const link = `http://127.0.0.1:5500/front/resetar-senha.html?token=${token}`
+            const link = `http://localhost:5173/resetar-senha?token=${token}`;
 
             await transport.sendMail({
 
@@ -402,7 +402,7 @@ async novousuario(request, response) {
 
             return response.status(200).json({
 
-                message: "token enviado com sucesso"
+                message: "token enviado com sucesso, verificar email"
 
             })
 
