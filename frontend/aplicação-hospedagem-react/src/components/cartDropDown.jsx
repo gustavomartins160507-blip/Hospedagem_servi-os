@@ -10,6 +10,7 @@ const CartDropdown = ({ isOpen, onCLose}) =>{
     const dropDownRef = useRef(null)
 
     useEffect(() =>{
+        
         const handleClickOuside = (event) =>{
             if(dropDownRef.current && !dropDownRef.current.contains(event.target)){
 
@@ -18,7 +19,9 @@ const CartDropdown = ({ isOpen, onCLose}) =>{
         }
         
         if(isOpen){
+
             document.addEventListener("mousedown",handleClickOuside)
+
         }
         return () =>{
             document.removeEventListener("mousedown", handleClickOuside)
@@ -38,7 +41,7 @@ const CartDropdown = ({ isOpen, onCLose}) =>{
 
     return(
         
-        <div ref={dropdownRef} className="cart-dropdown">
+        <div ref={dropDownRef} className="cart-dropdown">
 
             <div className="cart-content">
 
